@@ -1,0 +1,292 @@
+<svg width="1000" height="390" viewBox="0 0 1000 390"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111b46"/>
+      <stop offset="100%" stop-color="#0d1433"/>
+    </linearGradient>
+
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4d73ff"/>
+      <stop offset="50%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#ff4fd8"/>
+    </linearGradient>
+
+    <linearGradient id="avatarGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5d7cff"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ff4fd8"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #ffffff;
+      }
+
+      .muted {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #8e9bc7;
+      }
+
+      .small {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #6f7eae;
+      }
+
+      .stat {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #ffffff;
+        font-weight: bold;
+      }
+    </style>
+  </defs>
+
+  <!-- Main panel -->
+  <rect
+    x="2" y="2"
+    width="996" height="386"
+    rx="24"
+    fill="url(#bg)"
+    stroke="#4966c9"
+    stroke-width="2"
+  />
+
+  <!-- Top accent -->
+  <rect
+    x="25" y="25"
+    width="950"
+    height="2"
+    rx="2"
+    fill="url(#line)"
+    opacity="0.9"
+  />
+
+  <!-- Section title -->
+  <text x="35" y="65"
+        class="title"
+        font-size="20"
+        font-weight="bold">
+    PROFILE AT A GLANCE
+  </text>
+
+  <text x="35" y="88"
+        class="small"
+        font-size="11">
+    DEVELOPER IDENTITY • ACTIVITY • TECHNOLOGY
+  </text>
+
+  <!-- Profile card -->
+  <rect
+    x="30" y="112"
+    width="330" height="245"
+    rx="18"
+    fill="#0c1534"
+    stroke="#344a91"
+    stroke-width="1.5"
+  />
+
+  <!-- Avatar -->
+  <circle
+    cx="88"
+    cy="170"
+    r="38"
+    fill="none"
+    stroke="url(#avatarGlow)"
+    stroke-width="3"
+    filter="url(#glow)"
+  />
+
+  <circle
+    cx="88"
+    cy="170"
+    r="31"
+    fill="#18255a"
+  />
+
+  <!-- Avatar placeholder -->
+  <text
+    x="88"
+    y="180"
+    text-anchor="middle"
+    font-size="28"
+    font-family="Arial, Helvetica, sans-serif"
+    font-weight="bold"
+    fill="#ffffff">
+    H
+  </text>
+
+  <!-- Identity -->
+  <text x="145" y="157"
+        class="title"
+        font-size="18"
+        font-weight="bold">
+    Himanshu
+  </text>
+
+  <text x="145" y="179"
+        class="muted"
+        font-size="12">
+    Data Analyst
+  </text>
+
+  <text x="145" y="198"
+        class="muted"
+        font-size="12">
+    • Cyber Security Learner
+  </text>
+
+  <!-- Status -->
+  <circle cx="48" cy="225" r="4" fill="#45e6a6"/>
+
+  <text x="60" y="229"
+        class="small"
+        font-size="11">
+    AVAILABLE FOR OPPORTUNITIES
+  </text>
+
+  <!-- Divider -->
+  <line
+    x1="48" y1="247"
+    x2="342" y2="247"
+    stroke="#273866"
+    stroke-width="1"
+  />
+
+  <!-- Profile details -->
+  <text x="48" y="273"
+        class="small"
+        font-size="10">
+    PRIMARY FOCUS
+  </text>
+
+  <text x="48" y="292"
+        class="title"
+        font-size="13">
+    Data Analytics • Web Development
+  </text>
+
+  <text x="48" y="318"
+        class="small"
+        font-size="10">
+    CURRENT LEARNING
+  </text>
+
+  <text x="48" y="337"
+        class="title"
+        font-size="13">
+    Cyber Security • AI • Cloud
+  </text>
+
+
+  <!-- Statistics area -->
+
+  <text x="400" y="140"
+        class="small"
+        font-size="11">
+    GITHUB ACTIVITY
+  </text>
+
+  <!-- Stat cards -->
+  <rect
+    x="400" y="157"
+    width="170" height="82"
+    rx="14"
+    fill="#101b42"
+    stroke="#304684"
+  />
+
+  <text x="425" y="188"
+        class="small"
+        font-size="10">
+    REPOSITORIES
+  </text>
+
+  <text x="425" y="220"
+        class="stat"
+        font-size="28">
+    17+
+  </text>
+
+
+  <rect
+    x="590" y="157"
+    width="170" height="82"
+    rx="14"
+    fill="#101b42"
+    stroke="#304684"
+  />
+
+  <text x="615" y="188"
+        class="small"
+        font-size="10">
+    PROJECTS
+  </text>
+
+  <text x="615" y="220"
+        class="stat"
+        font-size="28">
+    10+
+  </text>
+
+
+  <rect
+    x="780" y="157"
+    width="170" height="82"
+    rx="14"
+    fill="#101b42"
+    stroke="#304684"
+  />
+
+  <text x="805" y="188"
+        class="small"
+        font-size="10">
+    TECHNOLOGIES
+  </text>
+
+  <text x="805" y="220"
+        class="stat"
+        font-size="28">
+    15+
+  </text>
+
+
+  <!-- Lower activity panel -->
+
+  <rect
+    x="400" y="260"
+    width="550" height="77"
+    rx="14"
+    fill="#101b42"
+    stroke="#304684"
+  />
+
+  <text x="425" y="287"
+        class="small"
+        font-size="10">
+    CURRENT ROLE
+  </text>
+
+  <text x="425" y="311"
+        class="title"
+        font-size="15"
+        font-weight="bold">
+    DATA ANALYST • CYBER SECURITY LEARNER
+  </text>
+
+  <text x="425" y="328"
+        class="small"
+        font-size="10">
+    Building projects • Learning continuously • Exploring new technologies
+  </text>
+
+</svg>

@@ -1,0 +1,447 @@
+<svg
+  width="1000"
+  height="330"
+  viewBox="0 0 1000 330"
+  xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="bg"
+                    x1="0"
+                    y1="0"
+                    x2="1"
+                    y2="1">
+
+      <stop offset="0%" stop-color="#101a43"/>
+      <stop offset="100%" stop-color="#11183a"/>
+
+    </linearGradient>
+
+    <radialGradient id="core">
+
+      <stop offset="0%" stop-color="#ff62ff"/>
+      <stop offset="45%" stop-color="#7a5cff"/>
+      <stop offset="100%" stop-color="#263e9a"/>
+
+    </radialGradient>
+
+    <filter id="glow">
+
+      <feGaussianBlur
+        stdDeviation="8"
+        result="blur"/>
+
+      <feMerge>
+
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+
+      </feMerge>
+
+    </filter>
+
+  </defs>
+
+
+  <!-- PANEL -->
+
+  <rect
+    x="4"
+    y="4"
+    width="992"
+    height="322"
+    rx="24"
+    fill="url(#bg)"
+    stroke="#4966c9"
+    stroke-width="2"/>
+
+
+  <!-- ORBIT SYSTEM -->
+
+  <g transform="translate(255 165)">
+
+    <!-- orbit paths -->
+
+    <ellipse
+      rx="125"
+      ry="55"
+      fill="none"
+      stroke="#3b579e"
+      stroke-width="2"
+      opacity=".65"/>
+
+    <ellipse
+      rx="125"
+      ry="55"
+      transform="rotate(60)"
+      fill="none"
+      stroke="#3b579e"
+      stroke-width="2"
+      opacity=".65"/>
+
+    <ellipse
+      rx="125"
+      ry="55"
+      transform="rotate(-60)"
+      fill="none"
+      stroke="#3b579e"
+      stroke-width="2"
+      opacity=".65"/>
+
+
+    <!-- central glow -->
+
+    <circle
+      r="63"
+      fill="#4035a3"
+      opacity=".35"
+      filter="url(#glow)"/>
+
+    <circle
+      r="47"
+      fill="url(#core)"
+      filter="url(#glow)"/>
+
+    <circle
+      r="34"
+      fill="#7854e9"/>
+
+
+    <!-- code -->
+
+    <text
+      x="0"
+      y="10"
+      text-anchor="middle"
+      fill="white"
+      font-family="Arial, sans-serif"
+      font-size="26"
+      font-weight="700">
+
+      &lt;/&gt;
+
+    </text>
+
+
+    <!-- orbiting nodes -->
+
+    <circle cx="0" cy="-125" r="15"
+            fill="#168cff"
+            stroke="#7597ff"
+            stroke-width="2"/>
+
+    <circle cx="108" cy="-55" r="15"
+            fill="#ff566d"
+            stroke="#ff9aa7"
+            stroke-width="2"/>
+
+    <circle cx="108" cy="55" r="15"
+            fill="#815cff"
+            stroke="#b6a4ff"
+            stroke-width="2"/>
+
+    <circle cx="0" cy="125" r="15"
+            fill="#28b8d8"
+            stroke="#7deaff"
+            stroke-width="2"/>
+
+    <circle cx="-108" cy="55" r="15"
+            fill="#3b8cff"
+            stroke="#8ab7ff"
+            stroke-width="2"/>
+
+    <circle cx="-108" cy="-55" r="15"
+            fill="#ffbf62"
+            stroke="#ffe1a8"
+            stroke-width="2"/>
+
+
+    <!-- rotating ring -->
+
+    <ellipse
+      rx="142"
+      ry="70"
+      fill="none"
+      stroke="#7b55ff"
+      stroke-width="2"
+      stroke-dasharray="7 9">
+
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="12s"
+        repeatCount="indefinite"/>
+
+    </ellipse>
+
+  </g>
+
+
+  <!-- RIGHT SIDE -->
+
+  <g transform="translate(505 35)">
+
+    <!-- FRONTEND -->
+
+    <text
+      x="0"
+      y="12"
+      fill="#8a82ff"
+      font-family="Arial, sans-serif"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2">
+
+      FRONTEND
+
+    </text>
+
+
+    <g transform="translate(0 25)">
+
+      <rect width="92" height="32" rx="9"
+            fill="#192653"
+            stroke="#ef6b75"/>
+
+      <text x="46" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        HTML5
+
+      </text>
+
+
+      <rect x="102" width="75" height="32" rx="9"
+            fill="#192653"
+            stroke="#866dff"/>
+
+      <text x="139" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        CSS
+
+      </text>
+
+
+      <rect x="187" width="105" height="32" rx="9"
+            fill="#192653"
+            stroke="#d3b75e"/>
+
+      <text x="239" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        JavaScript
+
+      </text>
+
+    </g>
+
+
+    <!-- DATA -->
+
+    <text
+      x="0"
+      y="91"
+      fill="#b18bff"
+      font-family="Arial"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2">
+
+      DATA &amp; ANALYTICS
+
+    </text>
+
+
+    <g transform="translate(0 104)">
+
+      <rect width="72" height="32" rx="9"
+            fill="#192653"
+            stroke="#34c7d5"/>
+
+      <text x="36" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        SQL
+
+      </text>
+
+
+      <rect x="82" width="82" height="32" rx="9"
+            fill="#192653"
+            stroke="#4d8cff"/>
+
+      <text x="123" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        Python
+
+      </text>
+
+
+      <rect x="174" width="85" height="32" rx="9"
+            fill="#192653"
+            stroke="#e4b35b"/>
+
+      <text x="216" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        Power BI
+
+      </text>
+
+    </g>
+
+
+    <!-- WEB -->
+
+    <text
+      x="0"
+      y="170"
+      fill="#8e82ff"
+      font-family="Arial"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2">
+
+      WEB &amp; CLOUD
+
+    </text>
+
+
+    <g transform="translate(0 183)">
+
+      <rect width="76" height="32" rx="9"
+            fill="#192653"
+            stroke="#4f93ff"/>
+
+      <text x="38" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        React
+
+      </text>
+
+
+      <rect x="86" width="78" height="32" rx="9"
+            fill="#192653"
+            stroke="#72a5ff"/>
+
+      <text x="125" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        Flask
+
+      </text>
+
+
+      <rect x="174" width="83" height="32" rx="9"
+            fill="#192653"
+            stroke="#9b72ff"/>
+
+      <text x="215" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        AWS
+
+      </text>
+
+    </g>
+
+
+    <!-- AI / SECURITY -->
+
+    <text
+      x="0"
+      y="249"
+      fill="#c07aff"
+      font-family="Arial"
+      font-size="11"
+      font-weight="700"
+      letter-spacing="2">
+
+      AI &amp; SECURITY
+
+    </text>
+
+
+    <g transform="translate(0 260)">
+
+      <rect width="83" height="32" rx="9"
+            fill="#192653"
+            stroke="#ff7380"/>
+
+      <text x="41" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        AI / ML
+
+      </text>
+
+
+      <rect x="93" width="108" height="32" rx="9"
+            fill="#192653"
+            stroke="#8e82ff"/>
+
+      <text x="147" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        Cyber Security
+
+      </text>
+
+
+      <rect x="211" width="86" height="32" rx="9"
+            fill="#192653"
+            stroke="#52b9ff"/>
+
+      <text x="254" y="21"
+            text-anchor="middle"
+            fill="#ffffff"
+            font-family="Arial"
+            font-size="11">
+
+        GitHub
+
+      </text>
+
+    </g>
+
+  </g>
+
+</svg>

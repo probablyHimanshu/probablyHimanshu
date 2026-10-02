@@ -1,0 +1,332 @@
+<svg width="1000" height="430" viewBox="0 0 1000 430"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111b46"/>
+      <stop offset="100%" stop-color="#0c1432"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4d73ff"/>
+      <stop offset="50%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#ff4fd8"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .title {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #ffffff;
+      }
+
+      .muted {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #8e9bc7;
+      }
+
+      .small {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #6676aa;
+      }
+
+      .project {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #ffffff;
+        font-weight: bold;
+      }
+
+      .tech {
+        font-family: Arial, Helvetica, sans-serif;
+        fill: #aeb9df;
+      }
+    </style>
+
+  </defs>
+
+
+  <!-- Main panel -->
+
+  <rect
+    x="2"
+    y="2"
+    width="996"
+    height="426"
+    rx="24"
+    fill="url(#bg)"
+    stroke="#4966c9"
+    stroke-width="2"
+  />
+
+
+  <!-- Top accent -->
+
+  <rect
+    x="25"
+    y="25"
+    width="950"
+    height="2"
+    rx="2"
+    fill="url(#accent)"
+  />
+
+
+  <!-- Heading -->
+
+  <text
+    x="35"
+    y="66"
+    class="title"
+    font-size="21"
+    font-weight="bold">
+    FEATURED BUILDS
+  </text>
+
+  <text
+    x="35"
+    y="88"
+    class="small"
+    font-size="11">
+    SELECTED PROJECTS • DEVELOPMENT • DATA • AI
+  </text>
+
+
+  <!-- Table header -->
+
+  <rect
+    x="30"
+    y="110"
+    width="940"
+    height="42"
+    rx="10"
+    fill="#17234e"
+    stroke="#304684"
+  />
+
+  <text
+    x="55"
+    y="136"
+    class="small"
+    font-size="10">
+    PROJECT
+  </text>
+
+  <text
+    x="350"
+    y="136"
+    class="small"
+    font-size="10">
+    DESCRIPTION
+  </text>
+
+  <text
+    x="770"
+    y="136"
+    class="small"
+    font-size="10">
+    TECHNOLOGY
+  </text>
+
+
+  <!-- Project 1 -->
+
+  <rect
+    x="30"
+    y="160"
+    width="940"
+    height="65"
+    rx="10"
+    fill="#0e1839"
+    stroke="#263b75"
+  />
+
+  <circle
+    cx="55"
+    cy="192"
+    r="7"
+    fill="#5d7cff"
+    filter="url(#glow)"
+  />
+
+  <text
+    x="75"
+    y="187"
+    class="project"
+    font-size="14">
+    Airbus Analytics Dashboard
+  </text>
+
+  <text
+    x="75"
+    y="205"
+    class="small"
+    font-size="9">
+    BUSINESS INTELLIGENCE
+  </text>
+
+  <text
+    x="350"
+    y="187"
+    class="muted"
+    font-size="11">
+    Interactive dashboard for aircraft
+  </text>
+
+  <text
+    x="350"
+    y="204"
+    class="muted"
+    font-size="11">
+    sales, performance and trend analysis.
+  </text>
+
+  <text
+    x="770"
+    y="195"
+    class="tech"
+    font-size="11">
+    Power BI • Excel
+  </text>
+
+
+  <!-- Project 2 -->
+
+  <rect
+    x="30"
+    y="235"
+    width="940"
+    height="65"
+    rx="10"
+    fill="#0e1839"
+    stroke="#263b75"
+  />
+
+  <circle
+    cx="55"
+    cy="267"
+    r="7"
+    fill="#a855f7"
+    filter="url(#glow)"
+  />
+
+  <text
+    x="75"
+    y="262"
+    class="project"
+    font-size="14">
+    Mini Search Engine
+  </text>
+
+  <text
+    x="75"
+    y="280"
+    class="small"
+    font-size="9">
+    SEARCH • WEB DEVELOPMENT
+  </text>
+
+  <text
+    x="350"
+    y="262"
+    class="muted"
+    font-size="11">
+    Private search experience with
+  </text>
+
+  <text
+    x="350"
+    y="279"
+    class="muted"
+    font-size="11">
+    a custom search-focused interface.
+  </text>
+
+  <text
+    x="770"
+    y="270"
+    class="tech"
+    font-size="11">
+    React • JavaScript
+  </text>
+
+
+  <!-- Project 3 -->
+
+  <rect
+    x="30"
+    y="310"
+    width="940"
+    height="65"
+    rx="10"
+    fill="#0e1839"
+    stroke="#263b75"
+  />
+
+  <circle
+    cx="55"
+    cy="342"
+    r="7"
+    fill="#ff4fd8"
+    filter="url(#glow)"
+  />
+
+  <text
+    x="75"
+    y="337"
+    class="project"
+    font-size="14">
+    Civic Management System
+  </text>
+
+  <text
+    x="75"
+    y="355"
+    class="small"
+    font-size="9">
+    FULL STACK • CLOUD
+  </text>
+
+  <text
+    x="350"
+    y="337"
+    class="muted"
+    font-size="11">
+    Web platform for reporting and
+  </text>
+
+  <text
+    x="350"
+    y="354"
+    class="muted"
+    font-size="11">
+    managing civic issues digitally.
+  </text>
+
+  <text
+    x="770"
+    y="345"
+    class="tech"
+    font-size="11">
+    React • Cloud • Git
+  </text>
+
+
+  <!-- Project 4 -->
+
+  <rect
+    x="30"
+    y="385"
+    width="940"
+    height="1"
+    fill="#273866"
+  />
+
+</svg>
